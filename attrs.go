@@ -89,6 +89,16 @@ const (
 	// TODO: redundant with span name?
 	GeneratorNameAttr = "dagger.io/generator.name"
 
+	// The name of the up function that this span represents.
+	// TODO: redundant with span name?
+	ServiceNameAttr = "dagger.io/service.name"
+
+	// Comma-separated list of exposed ports for a service.
+	ServicePortsAttr = "dagger.io/service.ports"
+
+	// Whether the service has passed its health checks and is healthy.
+	ServiceHealthyAttr = "dagger.io/service.healthy"
+
 	// Clarifies the meaning of a link between two spans.
 	LinkPurposeAttr = "dagger.io/link.purpose"
 	// The linked span caused the current span to run - in other words, this span
